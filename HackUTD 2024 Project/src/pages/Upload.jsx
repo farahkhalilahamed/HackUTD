@@ -33,10 +33,14 @@ const Upload = () => {
 
   return (
     <div>
-      <h2>Upload File</h2>
-      <input type="file" onChange={handleFileChange} />
-      <button onClick={handleUpload}>Upload</button>
-      {response && <pre>{JSON.stringify(response, null, 2)}</pre>}
+      <h2 className="text-darkblue text-2xl poppins-bold mx-auto flex w-screen max-w-screen-lg flex-col items-center py-10">
+        Upload File
+      </h2>
+      <div className="text-darkblue text-xl poppins-bold mx-auto flex w-screen max-w-screen-lg flex-col items-center py-10">
+        <input type="file" onChange={handleFileChange} />
+        <button onClick={handleUpload}>Upload</button>
+        {response && <pre>{JSON.stringify(response, null, 2)}</pre>}
+      </div>
     </div>
   );
 };
