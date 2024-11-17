@@ -7,7 +7,7 @@ function Navbar() {
         <div className="flex flex-row justify-between items-center px-20 py-4 bg-darkteal">
 
             {/* TITLE */}
-            <Link to='/' className="text-white text-3xl poppins-bold transition duration-300">
+            <Link to='/home' className="text-white text-3xl poppins-bold transition duration-300">
                 EcoData
             </Link>
 
